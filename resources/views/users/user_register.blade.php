@@ -25,12 +25,19 @@
                     <strong>{!! session('flash_message_success') !!}</strong>
             </div>
         @endif        
-            <form class="form-vertical" role="form" method="POST" action="{{ url('admin') }}">{{ csrf_field() }}
+            <form class="form-vertical" role="form" id="registerForm" name="registerForm" method="POST" action="{{ url('/register-user') }}">{{ csrf_field() }}
                 <div class="control-group normal_text"> <h3><img src="{{ asset('images/backend_images/logo.png') }}" alt="Logo" /></h3></div>
                 <div class="control-group">
                     <div class="controls">
                         <div class="main_input_box">
-                            <span class="add-on bg_lg"><i class="icon-user"> </i></span><input id="email" type="email" name="email" placeholder="Username" />
+                            <span class="add-on bg_lg"><i class="icon-user"> </i></span><input id="name" type="text" name="name" placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <span class="add-on bg_lg"><i class="icon-user"> </i></span><input id="email" type="email" name="email" placeholder="Email" />
                         </div>
                     </div>
                 </div>
@@ -42,7 +49,7 @@
                     </div>
                 </div>
                 <div class="form-actions">
-                    <span class="pull-right"><input type="submit" class="btn btn-success" value="Login" /></span>
+                    <span class="pull-right"><input type="submit" class="btn btn-success" value="Register" /></span>
                 </div>
             </form>
         </div>

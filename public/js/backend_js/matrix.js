@@ -66,7 +66,7 @@ $(document).ready(function(){
 		}
 		if($(window).width() > 768)
 		{
-			$('#user-nav > ul').css({width:'auto',margin:'0'});
+			$('#users-nav > ul').css({width:'auto',margin:'0'});
             $('#content-header .btn-group').css({width:'auto'});
 		}
 	});
@@ -96,11 +96,11 @@ $(document).ready(function(){
 		items: 4
 	});
 	
-	// === Fixes the position of buttons group in content header and top user navigation === //
+	// === Fixes the position of buttons group in content header and top users navigation === //
 	function fix_position()
 	{
-		var uwidth = $('#user-nav > ul').width();
-		$('#user-nav > ul').css({width:uwidth,'margin-left':'-' + uwidth / 2 + 'px'});
+		var uwidth = $('#users-nav > ul').width();
+		$('#users-nav > ul').css({width:uwidth,'margin-left':'-' + uwidth / 2 + 'px'});
         
         var cwidth = $('#content-header .btn-group').width();
         $('#content-header .btn-group').css({width:cwidth,'margin-left':'-' + uwidth / 2 + 'px'});

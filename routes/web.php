@@ -12,10 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('coming-soon');
+    return view('users.user_register');
 });
 
+// Admin Login
 Route::match(['get', 'post'], '/admin','AdminController@login');
+
+// User Register
+Route::match(['get', 'post'], '/register-user','UserController@register');
 
 Auth::routes();
 

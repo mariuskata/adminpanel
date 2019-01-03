@@ -44,7 +44,7 @@ $(document).ready(function(){
 		if(minutes < 10) minutes = '0' + minutes;
 		var id = 'msg-'+i;
         var idname = name.replace(' ','-').toLowerCase();
-		inner.append('<p id="'+id+'" class="user-'+idname+'">'
+		inner.append('<p id="'+id+'" class="users-'+idname+'">'
 										+'<span class="msg-block"><img src="'+img+'" alt="" /><strong>'+name+'</strong> <span class="time">- '+hours+':'+minutes+'</span>'
 										+'<span class="msg">'+msg+'</span></span></p>');
 		$('#'+id).hide().fadeIn(800);
@@ -55,7 +55,7 @@ $(document).ready(function(){
 	}
     function remove_user(userid,name) {
         i = i + 1;
-        $('.contact-list li#user-'+userid).addClass('offline').delay(1000).slideUp(800,function(){
+        $('.contact-list li#users-'+userid).addClass('offline').delay(1000).slideUp(800,function(){
             $(this).remove();
         });
         var  inner = $('#chat-messages-inner');

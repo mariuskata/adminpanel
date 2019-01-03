@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
 {
+
+    // Login Method
     public function login(Request $request){
         if($request->isMethod('post')){
             $data = $request->input();

@@ -53,14 +53,15 @@ hr{ border-top-color:#dadada;}
 	z-index: -9;
 }
 #header h1 {
-	background: url("../../images/backend_images/logo.png") no-repeat scroll 0 0 transparent;
-	height: 31px;
+	background: url("../../images/backend_images/logohive.png") no-repeat scroll 0 0 transparent;
+	height: 56px;
 	left: 20px;
 	line-height: 600px;
 	overflow: hidden;
 	position: relative;
-	top: 26px;
+	top: 10px;
 	width: 191px;
+	background-size: 178px;
 }
 #header h1 a {
 	display: block;
